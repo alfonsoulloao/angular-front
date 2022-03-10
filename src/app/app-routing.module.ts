@@ -8,9 +8,14 @@ import { GraficaComponent } from './pages/grafica/grafica.component';
 import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
 import { PagesComponent } from './pages/pages.component';
 import { RecoverPassComponent } from './auth/recoverpass/recoverpass.component';
-import { ClientesComponent } from './pages/clientes/clientes.component';
-import { FaenaComponent } from './pages/faena/faena.component';
-import { ContratoComponent } from './pages/contrato/contrato.component';
+import { ClientesComponent } from './pages/clientes/clientes/clientes.component';
+import { FaenaComponent } from './pages/clientes/faena/faena.component';
+import { ContratoComponent } from './pages/clientes/contrato/contrato.component';
+import { TablaComponent } from './utils/commons/tabla/tabla.component';
+import { PersonasComponent } from './pages/personal/personas/personas.component';
+import { OperadoresComponent } from './pages/personal/operadores/operadores.component';
+import { AusentismosComponent } from './pages/personal/ausentismos/ausentismos.component';
+
 
 const routes: Routes = [
   { 
@@ -22,6 +27,15 @@ const routes: Routes = [
       {path: 'faenas', component: FaenaComponent},
       {path: 'contratos', component: ContratoComponent},    
       { path: 'grafica', component: GraficaComponent },
+      { path: 'tabla', component: TablaComponent },
+      
+      
+      { path: 'personas', component: PersonasComponent },
+      { path: 'operadores', component: OperadoresComponent },
+      { path: 'tabla', component: AusentismosComponent },
+    
+
+
       { path: '', redirectTo: '/login', pathMatch: 'full' },
     ]
   },

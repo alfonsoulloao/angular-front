@@ -7,9 +7,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { GraficaComponent } from './grafica/grafica.component';
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
-import { ClientesComponent } from './clientes/clientes.component';
-import { FaenaComponent } from './faena/faena.component';
-import { ContratoComponent } from './contrato/contrato.component';
+
 
 
 
@@ -20,7 +18,7 @@ import { ContratoComponent } from './contrato/contrato.component';
     DashboardComponent, 
     NopagefoundComponent, 
     ProgressComponent, 
-    GraficaComponent, ClientesComponent, FaenaComponent, ContratoComponent ],
+    GraficaComponent,  ],
   exports:[PagesComponent,],
   imports: [
     CommonModule,

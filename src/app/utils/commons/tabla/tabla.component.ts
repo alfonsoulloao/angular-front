@@ -5,6 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './tabla.component.html',
   styleUrls: ['./tabla.component.css']
 })
+
+// href="../assets/plugins/tablesaw-master/dist/tablesaw.css"
 export class TablaComponent implements OnInit {
 
   constructor() { }
