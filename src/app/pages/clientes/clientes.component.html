@@ -1,0 +1,281 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <!-- titulo de la pagina -->
+        <h4 class="card-title">Clientes</h4>
+
+        <!-- Primera Busqueda -->
+        <div class="row">
+          <div class="col-8">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <div class="input-group mt-9 mb-9 input-group m-l-10">
+                    <div class="input-group-prepend">
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary dropdown-toggle"
+                        data-toggle="dropdown"
+                      >
+                        Tipo de Busqueda
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" routerLink="/faenas">Rut</a>
+                        <a class="dropdown-item" routerLink="/faenas">Nombre</a>
+                        <a class="dropdown-item" routerLink="/faenas"
+                          >Cliente</a
+                        >
+                        <a class="dropdown-item" routerLink="/faenas"
+                          >Razon Social</a
+                        >
+                      </div>
+                    </div>
+                    <div class="input-group input-group m-l-10">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Ingrese valor a buscar"
+                      />
+                    </div>
+                    <div class="input-group">
+                      <button
+                        type="button"
+                        class="btn btn-outline-success m-l-10"
+                      >
+                        Buscar
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-success m-l-10"
+                      >
+                        Crear
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Primera Busqueda -->
+
+    <!-- Agrego tablas -->
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                
+                <div class="container">                                    
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Rut</th>
+                        <th>Nombre</th>
+                        <th>Razon Social</th>
+                        <th>Sigla</th>
+                        <th>Accion</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>77.123.456-7</td>
+                        <td>DAMY COMPANY</td>
+                        <td>DAMY S.A.</td>
+                        <td>DMC</td>
+                        <td><link rel="stylesheet" href="">Edit </td>
+                      </tr>
+                      <tr>
+                        <td>77.123.456-7</td>
+                        <td>DAMY COMPANY 2</td>
+                        <td>DAMY S.A.</td>
+                        <td>DMC</td>
+                        <td><link rel="stylesheet" href="">Edit </td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!--final de tablas -->   
+    
+    
+<!-- Crear cliente -->
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">    
+              <h4 class="card-title">Crear</h4>    
+              
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                        <!-- titulo de la pagina -->
+                      <h4 class="card-title">Clientes</h4>
+                         
+                        <form class="form-horizontal p-t-20">
+                            <div class="form-group row">
+                                <label for="exampleInputuname3" class="col-sm-3 control-label">Rut</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="text" class="form-control" id="exampleInputuname3" placeholder="11.111.111-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="exampleInputEmail3" class="col-sm-3 control-label">Razon Social</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Ingrese Razon Social">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="web" class="col-sm-3 control-label">Nombre</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                        <input type="text" class="form-control" id="web" placeholder="Ingrese El nombre">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword4" class="col-sm-3 control-label">Sigla</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                        <input type="password" class="form-control" id="exampleInputpwd4" placeholder="Ingrese la sigla">
+                                    </div>
+                                </div>
+                            </div>
+                                       
+                            <div class="form-group ">
+                                <div class="offset-sm-12 col-sm-12">
+                                    <button type="submit" class="btn btn-outline-danger m-l-10 waves-effect waves-light">Cancelar</button>
+                                    <button type="submit" class="btn btn-outline-success m-l-10 waves-effect waves-light">Guardar</button>
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-0">
+                              <div class="offset-sm-3 col-sm-9">
+                                
+                              </div>
+                          </div>
+                        </form>
+                    </div>
+              
+              
+                    
+                  </div>
+                </div>
+              </div>
+              
+          </div>            
+      </div>            
+      </div>            
+    </div>
+<!-- Crear cliente -->
+
+    <!-- editar cliente -->
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">    
+              <h4 class="card-title">Editar</h4>   
+              
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                        <!-- titulo de la pagina -->
+                      <h4 class="card-title">Clientes</h4>
+                         
+                        <form class="form-horizontal p-t-20">
+                          <!-- rut -->
+                            <div class="form-group row">
+                                <label for="exampleInputuname3" class="col-sm-3 control-label">RUT / RUN</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="text" class="form-control" id="exampleInputuname3" placeholder="11.111.111-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- nombre -->
+                            <div class="form-group row">
+                                <label for="exampleInputEmail3" class="col-sm-3 control-label">Nombre</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Modificar Nombre">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- razon social -->
+                            <div class="form-group row">
+                                <label for="web" class="col-sm-3 control-label">Razon Social</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                        <input type="text" class="form-control" id="web" placeholder="Modificar Razon Social">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sigla -->
+                            <div class="form-group row">
+                                <label for="inputPassword4" class="col-sm-3 control-label">Sigla</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                        <input type="text" class="form-control" id="exampleInputpwd4" placeholder="Modificar Sigla">
+                                    </div>
+                                </div>
+                            </div>
+                          <!-- Estado -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Estado</label>
+                            <div class="col-sm-9">                                
+                              <div class="input-group">
+                                <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                  Estado
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" >Activo</a>
+                                  <a class="dropdown-item" >Inactivo</a>
+                                </div>
+                              </div>
+
+
+                            </div>
+                        </div>
+                        <!-- Botones -->
+                            <div class="form-group ">
+                                <div class="offset-sm-12 col-sm-12">
+                                    <button type="submit" class="btn btn-outline-danger m-l-10 waves-effect waves-light">Cancelar</button>
+                                    <button type="submit" class="btn btn-outline-success m-l-10 waves-effect waves-light">Guardar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>                            
+                  </div>
+                </div>
+              </div>              
+          </div>            
+        </div>            
+      </div>            
+    </div>
+<!--fin editar cliente -->
+
+
+        <!-- finalizan la card central-->
+      </div>
+    </div>
+  </div>
+
+ 

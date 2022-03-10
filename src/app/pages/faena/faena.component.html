@@ -1,0 +1,285 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <!-- titulo de la pagina -->
+        <h4 class="card-title">Faenas</h4>
+
+        <!-- Primera Busqueda Faenas -->
+        <div class="row">
+          <div class="col-8">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <div class="input-group mt-9 mb-9 input-group m-l-10">
+                    <div class="input-group-prepend">
+                      <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                        Nombre Cliente
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" routerLink="/faenas">Cliente 1</a>
+                        <a class="dropdown-item" routerLink="/faenas">Cliente 2</a>
+                        <a class="dropdown-item" routerLink="/faenas">Cliente 3</a>                        
+                      </div>
+                    </div>
+                    <div class="input-group input-group m-l-10">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Buscar Faenas"
+                      />
+                    </div>
+                    <div class="input-group">
+                      <button
+                        type="button"
+                        class="btn btn-outline-success m-l-10"
+                      >
+                        Buscar
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-success m-l-10"
+                      >
+                        Crear
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Primera Busqueda Faenas-->
+
+    <!-- Agrego tablas Faenas-->
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                
+                <div class="container">                                    
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Rut</th>
+                        <th>Nombre</th>
+                        <th>Razon Social</th>
+                        <th>Sigla</th>
+                        <th>Accion</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>77.123.456-7</td>
+                        <td>DAMY COMPANY</td>
+                        <td>DAMY S.A.</td>
+                        <td>DMC</td>
+                        <td><link rel="stylesheet" href="">Edit </td>
+                      </tr>
+                      <tr>
+                        <td>77.123.456-7</td>
+                        <td>DAMY COMPANY 2</td>
+                        <td>DAMY S.A.</td>
+                        <td>DMC</td>
+                        <td><link rel="stylesheet" href="">Edit </td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!--final de tablas Faenas-->   
+    
+    
+<!-- Crear Faena -->
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">    
+              <h4 class="card-title">Crear</h4>    
+              
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                        <!-- titulo de la pagina -->
+                      <h4 class="card-title">Faenas</h4>
+                         
+                        <form class="form-horizontal p-t-20">
+                            <div class="form-group row">
+                                <label for="exampleInputuname3" class="col-sm-3 control-label">Nombre</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="text" class="form-control" id="exampleInputuname3" placeholder="Nombre Faena">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="exampleInputEmail3" class="col-sm-3 control-label">Ubicación</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Ubicacion Faena">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="exampleInputEmail3" class="col-sm-3 control-label">Geozona</label>
+                              <div class="col-sm-9">
+                                  <div class="input-group">
+                                      <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                      <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Geozona Faena">
+                                  </div>
+                              </div>
+                          </div>
+                            <div class="form-group row">
+                                <label for="web" class="col-sm-3 control-label">Latitud</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="text" class="form-control" id="web" placeholder="Latitud Faena">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword4" class="col-sm-3 control-label">Longitud</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="password" class="form-control" id="exampleInputpwd4" placeholder="Longitud Faena">
+                                    </div>
+                                </div>
+                            </div>
+                                       
+                            <div class="form-group ">
+                                <div class="offset-sm-12 col-sm-12">
+                                    <button type="submit" class="btn btn-outline-danger m-l-10 waves-effect waves-light">Cancelar</button>
+                                    <button type="submit" class="btn btn-outline-success m-l-10 waves-effect waves-light">Guardar</button>
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-0">
+                              <div class="offset-sm-3 col-sm-9">
+                                
+                              </div>
+                          </div>
+                        </form>
+                    </div>
+              
+              
+                    
+                  </div>
+                </div>
+              </div>
+              
+          </div>            
+      </div>            
+      </div>            
+    </div>
+<!-- Crear Faenas -->
+
+    <!-- editar Faenas -->
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">    
+              <h4 class="card-title">Crear</h4>    
+              
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                        <!-- titulo de la pagina -->
+                      <h4 class="card-title">Faenas</h4>
+                         
+                        <form class="form-horizontal p-t-20">
+                            <div class="form-group row">
+                                <label for="exampleInputuname3" class="col-sm-3 control-label">Nombre</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="text" class="form-control" id="exampleInputuname3" placeholder="Nombre Faena">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="exampleInputEmail3" class="col-sm-3 control-label">Ubicación</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Ubicacion Faena">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="exampleInputEmail3" class="col-sm-3 control-label">Geozona</label>
+                              <div class="col-sm-9">
+                                  <div class="input-group">
+                                      <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                      <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Geozona Faena">
+                                  </div>
+                              </div>
+                          </div>
+                            <div class="form-group row">
+                                <label for="web" class="col-sm-3 control-label">Latitud</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="text" class="form-control" id="web" placeholder="Latitud Faena">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword4" class="col-sm-3 control-label">Longitud</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="password" class="form-control" id="exampleInputpwd4" placeholder="Longitud Faena">
+                                    </div>
+                                </div>
+                            </div>
+                                       
+                            <div class="form-group ">
+                                <div class="offset-sm-12 col-sm-12">
+                                    <button type="submit" class="btn btn-outline-danger m-l-10 waves-effect waves-light">Cancelar</button>
+                                    <button type="submit" class="btn btn-outline-success m-l-10 waves-effect waves-light">Guardar</button>
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-0">
+                              <div class="offset-sm-3 col-sm-9">
+                                
+                              </div>
+                          </div>
+                        </form>
+                    </div>
+              
+              
+                    
+                  </div>
+                </div>
+              </div>
+              
+          </div>            
+      </div>            
+      </div>            
+    </div>
+<!--fin editar Faenas -->
+
+
+        <!-- finalizan la card -->
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">    
+          <h4 class="card-title">Title</h4>       
+      </div>            
+  </div>            
+  </div>            
+</div>             -->
