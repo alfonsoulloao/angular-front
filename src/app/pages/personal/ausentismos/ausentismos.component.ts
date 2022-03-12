@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MultiselectComponent} from '../../../utils/commons/multiselect/multiselect.component'
 
 @Component({
   selector: 'app-ausentismos',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class AusentismosComponent implements OnInit {
 
   constructor() { }
+
+  
 
   ngOnInit(): void {
   }

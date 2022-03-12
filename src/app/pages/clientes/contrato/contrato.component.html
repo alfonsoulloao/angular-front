@@ -261,7 +261,7 @@
     <!-- Crear cliente -->
 
 
-    <!-- Crear Contrato -->
+    <!-- Editar Contrato -->
                   <div class="row">
                     <div class="col-12">
                       <div class="card">
@@ -351,24 +351,22 @@
                                       </div>
                                   </div>
                                   
-                                  <!-- Estado -->
-                                  <div class="form-group row">
-                                    <label for="inputPassword4" class="col-sm-3 control-label">Estado</label>
-                                    <div class="col-sm-9">                                
-                                      <div class="input-group">
-                                        <div class="input-group-addon"><i class="ti-marker"></i></div>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                                          Estado
-                                        </button>
-                                        <div class="dropdown-menu">
-                                          <a class="dropdown-item" >Activo</a>
-                                          <a class="dropdown-item" >Inactivo</a>
-                                        </div>
-                                      </div>
-
-
-                                    </div>
+                                   <!-- Estado -->
+                            <div class="form-group row">
+                              <label for="inputPassword4" class="col-sm-3 control-label">Estado</label>
+                              <div class="col-sm-9">                                
+                                <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                  <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                      <option>Seleccionar Area de Negocio</option>                                                                                                                                                                                                            
+                                          <option value="VA">Activo</option>
+                                          <option value="WV">Inactivo</option>                                            
+                                  </select> 
                                 </div>
+                              </div>
+                          </div>
+
+                          
                                 <!-- Botones -->
                                     <div class="form-group ">
                                         <div class="offset-sm-12 col-sm-12">

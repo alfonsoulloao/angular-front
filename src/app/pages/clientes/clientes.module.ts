@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+// mis modulos
+import { SharedModule } from 'src/app/shared/shared.module';
+// mis componentes
 import { ClientesComponent } from './clientes/clientes.component';
 import { FaenaComponent } from './faena/faena.component';
 import { ContratoComponent } from './contrato/contrato.component';
-import { SharedModule } from 'src/app/shared/shared.module';
+// mis rutas
 import { AppRoutingModule } from 'src/app/app-routing.module';
-
-
+import { UtilsModule } from 'src/app/utils/utils.module';
 
 @NgModule({
   declarations: [
@@ -15,8 +18,9 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     ContratoComponent],
   imports: [
     CommonModule,    
+    AppRoutingModule,
+    UtilsModule,
     SharedModule,
-    AppRoutingModule
   ]
 })
 export class ClientesModule { }

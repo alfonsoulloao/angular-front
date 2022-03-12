@@ -1,1 +1,538 @@
-<p>operadores works!</p>
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <!-- titulo de la pagina -->
+          <h4 class="card-title">Administracion de Operadores</h4>
+  <!-- Inicio de Buscar  Operadores-->
+          <!-- Primera Busqueda -->
+          <div class="row">
+            <div class="col-8">
+              <div class="card">
+                <div class="card-body">
+                  <form>
+                    <div class="input-group mt-9 mb-9 input-group m-l-10">
+                      <div class="input-group-prepend">
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary dropdown-toggle"
+                          data-toggle="dropdown">
+                          Tipo de Busqueda
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" routerLink="/faenas">Rut</a>
+                          <a class="dropdown-item" routerLink="/faenas">Nombre</a>                        
+                        </div>
+                      </div>
+                      <div class="input-group input-group m-l-10">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ingrese valor a buscar"
+                        />
+                      </div>
+                      <div class="input-group">
+                        <button
+                          type="button"
+                          class="btn btn-outline-success m-l-10"
+                        >
+                          Buscar
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-success m-l-10"
+                        >
+                          Crear
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Primera Busqueda -->
+  
+      <!-- Agrego tablas  -->
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  
+                  <div class="container">                                    
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Rut</th>
+                          <th>Nombre</th>
+                          <th>Razon Social</th>
+                          <th>Sigla</th>
+                          <th>Accion</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>77.123.456-7</td>
+                          <td>DAMY COMPANY</td>
+                          <td>DAMY S.A.</td>
+                          <td>DMC</td>
+                          <td><link rel="stylesheet" href="">Edit </td>
+                        </tr>
+                        <tr>
+                          <td>77.123.456-7</td>
+                          <td>DAMY COMPANY 2</td>
+                          <td>DAMY S.A.</td>
+                          <td>DMC</td>
+                          <td><link rel="stylesheet" href="">Edit </td>
+                        </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!--final de tablas -->   
+<!-- Fin de Buscar Operadores -->
+      
+      
+  <!-- Crear Operadores -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">    
+                <h4 class="card-title">Crear</h4>    
+                
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                          <!-- titulo de la pagina -->
+                        <h4 class="card-title">Crear Operador</h4>
+                           
+                          <form class="form-horizontal p-t-20">
+                            
+                              <!-- Rut -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Rut</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                  <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                    <option>Seleccionar Rut</option>                                                                                                                                                                                                            
+                                        <option value="VA">Santiago</option>
+                                        <option value="WV">Buin</option>
+                                        <option value="WV">Pirque</option>
+                                </select>             
+                                </div>
+                            </div>
+                          </div>
+                            
+                        <!-- Cargo -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Cargo</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                  <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                    <option>Seleccionar Cargo</option>                                                                                                                                                                                                            
+                                        <option value="VA">Santiago</option>
+                                        <option value="WV">Buin</option>
+                                        <option value="WV">Pirque</option>
+                                </select>             
+                                </div>
+                            </div>
+                          </div>
+                            
+                        <!-- Turno -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Turno</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                  <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                    <option>Seleccionar Turno</option>                                                                                                                                                                                                            
+                                        <option value="VA">Santiago</option>
+                                        <option value="WV">Buin</option>
+                                        <option value="WV">Pirque</option>
+                                </select>             
+                                </div>
+                            </div>
+                          </div>
+                             
+                        <!-- Tipo Operador -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Tipo Operador</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                  <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                    <option>Seleccionar Tipo Operador</option>                                                                                                                                                                                                            
+                                        <option value="VA">Santiago</option>
+                                        <option value="WV">Buin</option>
+                                        <option value="WV">Pirque</option>
+                                </select>             
+                                </div>
+                            </div>
+                          </div>                      
+
+                        <!-- Tipo Contrato -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Tipo Contrato</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                  <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                    <option>Seleccionar Tipo Contrato</option>                                                                                                                                                                                                            
+                                        <option value="VA">Santiago</option>
+                                        <option value="WV">Buin</option>
+                                        <option value="WV">Pirque</option>
+                                </select>             
+                                </div>
+                            </div>
+                          </div>
+
+                        <!-- Unida Organizativa -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Unida Organizativa</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                  <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                    <option>Seleccionar Unida Organizativa</option>                                                                                                                                                                                                            
+                                        <option value="VA">Santiago</option>
+                                        <option value="WV">Buin</option>
+                                        <option value="WV">Pirque</option>
+                                </select>             
+                                </div>
+                            </div>
+                          </div>
+
+                         <!-- Area de Negocio -->
+                         <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Area de Negocio</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                  <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                    <option>Seleccionar Area de Negocio</option>                                                                                                                                                                                                            
+                                        <option value="VA">Santiago</option>
+                                        <option value="WV">Buin</option>
+                                        <option value="WV">Pirque</option>
+                                </select>             
+                                </div>
+                            </div>
+                          </div>  
+                            
+                        <!-- Centro Costo-->
+                        <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Centro Costo</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                    <input type="text" class="form-control" id="exampleInputpwd4" placeholder="Centro Costo">
+                                </div>
+                            </div>
+                          </div>      
+
+                          <!-- Id Contrato -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Id Contrato</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                    <input type="text" class="form-control" id="exampleInputpwd4" placeholder="Id Contrato">
+                                </div>
+                            </div>
+                          </div>     
+                             
+                           <!-- Fecha Inicio -->
+                           <div class="form-group row">
+                            <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Inicio</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                    <input type="date" class="form-control" placeholder="dd/mm/yyyy">                                    
+                                </div>
+                            </div>
+                          </div>
+
+                            <!-- Fecha Termino -->
+                              <div class="form-group row">
+                              <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Termino</label>
+                              <div class="col-sm-9">
+                                  <div class="input-group">
+                                      <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                      <input type="date" class="form-control" placeholder="dd/mm/yyyy">   
+                                  </div>
+                              </div>
+                              </div>                              
+
+                             <!-- Clase Convenio Colectivo -->
+                             <div class="form-group row">
+                                <label for="inputPassword4" class="col-sm-3 control-label">Clase Convenio Colectivo</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                        <input type="text" class="form-control" id="exampleInputpwd4" placeholder="Clase Convenio Colectivo">
+                                    </div>
+                                </div>
+                              </div>  
+
+                            
+                             <!-- termina -->
+                              <div class="form-group">
+                                  <div class="offset-sm-12 col-sm-12">
+                                      <button type="submit" class="btn btn-outline-danger m-l-10 waves-effect waves-light">Cancelar</button>
+                                      <button type="submit" class="btn btn-outline-success m-l-10 waves-effect waves-light">Guardar</button>
+                                  </div>
+                              </div>
+                              
+                              
+                          </form>
+                          <!-- fin del form -->
+                      </div>                                                      
+                    </div>
+                  </div>
+                </div>                
+            </div>            
+          </div>            
+        </div>            
+      </div>
+  <!-- Crear Operadores -->
+
+
+
+
+        
+  <!-- Modificar Operadores -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">    
+            <h4 class="card-title">Crear</h4>    
+            
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                      <!-- titulo de la pagina -->
+                    <h4 class="card-title">Crear Operador</h4>
+                       
+                      <form class="form-horizontal p-t-20">
+                        
+                          <!-- Rut -->
+                      <div class="form-group row">
+                        <label for="inputPassword4" class="col-sm-3 control-label">Rut</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                              <div class="input-group-addon"><i class="ti-marker"></i></div>
+                              <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                <option>Seleccionar Rut</option>                                                                                                                                                                                                            
+                                    <option value="VA">Santiago</option>
+                                    <option value="WV">Buin</option>
+                                    <option value="WV">Pirque</option>
+                            </select>             
+                            </div>
+                        </div>
+                      </div>
+                        
+                    <!-- Cargo -->
+                      <div class="form-group row">
+                        <label for="inputPassword4" class="col-sm-3 control-label">Cargo</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                              <div class="input-group-addon"><i class="ti-marker"></i></div>
+                              <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                <option>Seleccionar Cargo</option>                                                                                                                                                                                                            
+                                    <option value="VA">Santiago</option>
+                                    <option value="WV">Buin</option>
+                                    <option value="WV">Pirque</option>
+                            </select>             
+                            </div>
+                        </div>
+                      </div>
+                        
+                    <!-- Turno -->
+                      <div class="form-group row">
+                        <label for="inputPassword4" class="col-sm-3 control-label">Turno</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                              <div class="input-group-addon"><i class="ti-marker"></i></div>
+                              <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                <option>Seleccionar Turno</option>                                                                                                                                                                                                            
+                                    <option value="VA">Santiago</option>
+                                    <option value="WV">Buin</option>
+                                    <option value="WV">Pirque</option>
+                            </select>             
+                            </div>
+                        </div>
+                      </div>
+                         
+                    <!-- Tipo Operador -->
+                      <div class="form-group row">
+                        <label for="inputPassword4" class="col-sm-3 control-label">Tipo Operador</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                              <div class="input-group-addon"><i class="ti-marker"></i></div>
+                              <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                <option>Seleccionar Tipo Operador</option>                                                                                                                                                                                                            
+                                    <option value="VA">Santiago</option>
+                                    <option value="WV">Buin</option>
+                                    <option value="WV">Pirque</option>
+                            </select>             
+                            </div>
+                        </div>
+                      </div>                      
+
+                    <!-- Tipo Contrato -->
+                      <div class="form-group row">
+                        <label for="inputPassword4" class="col-sm-3 control-label">Tipo Contrato</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                              <div class="input-group-addon"><i class="ti-marker"></i></div>
+                              <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                <option>Seleccionar Tipo Contrato</option>                                                                                                                                                                                                            
+                                    <option value="VA">Santiago</option>
+                                    <option value="WV">Buin</option>
+                                    <option value="WV">Pirque</option>
+                            </select>             
+                            </div>
+                        </div>
+                      </div>
+
+                    <!-- Unida Organizativa -->
+                      <div class="form-group row">
+                        <label for="inputPassword4" class="col-sm-3 control-label">Unida Organizativa</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                              <div class="input-group-addon"><i class="ti-marker"></i></div>
+                              <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                <option>Seleccionar Unida Organizativa</option>                                                                                                                                                                                                            
+                                    <option value="VA">Santiago</option>
+                                    <option value="WV">Buin</option>
+                                    <option value="WV">Pirque</option>
+                            </select>             
+                            </div>
+                        </div>
+                      </div>
+
+                     <!-- Area de Negocio -->
+                     <div class="form-group row">
+                        <label for="inputPassword4" class="col-sm-3 control-label">Area de Negocio</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                              <div class="input-group-addon"><i class="ti-marker"></i></div>
+                              <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                <option>Seleccionar Area de Negocio</option>                                                                                                                                                                                                            
+                                    <option value="VA">Santiago</option>
+                                    <option value="WV">Buin</option>
+                                    <option value="WV">Pirque</option>
+                            </select>             
+                            </div>
+                        </div>
+                      </div>  
+                        
+                    <!-- Centro Costo-->
+                    <div class="form-group row">
+                        <label for="inputPassword4" class="col-sm-3 control-label">Centro Costo</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                <input type="text" class="form-control" id="exampleInputpwd4" placeholder="Centro Costo">
+                            </div>
+                        </div>
+                      </div>      
+
+                      <!-- Id Contrato -->
+                      <div class="form-group row">
+                        <label for="inputPassword4" class="col-sm-3 control-label">Id Contrato</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                <input type="text" class="form-control" id="exampleInputpwd4" placeholder="Id Contrato">
+                            </div>
+                        </div>
+                      </div>     
+                         
+                       <!-- Fecha Inicio -->
+                       <div class="form-group row">
+                        <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Inicio</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                <input type="date" class="form-control" placeholder="dd/mm/yyyy">                                    
+                            </div>
+                        </div>
+                      </div>
+
+                        <!-- Fecha Termino -->
+                          <div class="form-group row">
+                          <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Termino</label>
+                          <div class="col-sm-9">
+                              <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                  <input type="date" class="form-control" placeholder="dd/mm/yyyy">   
+                              </div>
+                          </div>
+                          </div>                              
+
+                         <!-- Clase Convenio Colectivo -->
+                         <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Clase Convenio Colectivo</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                    <input type="text" class="form-control" id="exampleInputpwd4" placeholder="Clase Convenio Colectivo">
+                                </div>
+                            </div>
+                          </div>                         
+                        
+                        
+                            <!-- Estado -->
+                            <div class="form-group row">
+                                <label for="inputPassword4" class="col-sm-3 control-label">Estado</label>
+                                <div class="col-sm-9">                                
+                                  <div class="input-group">
+                                    <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                    <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                        <option>Seleccionar Area de Negocio</option>                                                                                                                                                                                                            
+                                            <option value="VA">Activo</option>
+                                            <option value="WV">Inactivo</option>                                            
+                                    </select> 
+                                  </div>
+                                </div>
+                            </div>
+
+                        
+                         <!-- termina -->
+                          <div class="form-group">
+                              <div class="offset-sm-12 col-sm-12">
+                                  <button type="submit" class="btn btn-outline-danger m-l-10 waves-effect waves-light">Cancelar</button>
+                                  <button type="submit" class="btn btn-outline-success m-l-10 waves-effect waves-light">Guardar</button>
+                              </div>
+                          </div>
+                          
+                          
+                      </form>
+                      <!-- fin del form -->
+                  </div>                                                      
+                </div>
+              </div>
+            </div>                
+        </div>            
+      </div>            
+    </div>            
+  </div>
+<!-- Modificar Operador -->
+
+  
+  
+  
+          <!-- finalizan la card central-->
+        </div>
+      </div>
+    </div>
+  
+   

@@ -1,15 +1,19 @@
 // importacion de modulos
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AuthModule } from './auth/auth.module';
+import { HttpClientModule} from '@angular/common/http'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppComponent } from './app.component';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+
+// mis componentes
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
-import { HttpClientModule} from '@angular/common/http'
+import { AuthModule } from './auth/auth.module';
+import { UtilsModule } from './utils/utils.module';
 
-// importacion de components
-import { AppComponent } from './app.component';
+// mis rutas
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,14 +21,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgMultiSelectDropDownModule.forRoot(),    
+    // mis modulos
     AuthModule,
     PagesModule,
     SharedModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    
+    UtilsModule,
+    //mis rutas
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

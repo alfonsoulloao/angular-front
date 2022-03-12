@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemsDesplegable, SelectBuscador, ValoresConfg } from 'src/app/utils/models/multiselect';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +7,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  
+  valor:SelectBuscador;
+  itemsDesp:ItemsDesplegable[]=[];
+  valoreson:ValoresConfg;
 
-  constructor() { }
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
+    this.valor={
+      items :[
+        { item_id: "1", item_text: 'Mumbai' },
+        { item_id: "2", item_text: 'Bangaluru' },
+        { item_id: "3", item_text: 'Pune' },
+        { item_id: "4", item_text: 'Navsari' },
+        { item_id: "5", item_text: 'New Delhi' }
+      ],
+      valoresConfg:this.valoreson={
+        enableCheckAll:false,
+        idField: "item_id",
+        textField: "item_text",
+        allowSearchFilter: true,
+        clearSearchFilter:true,
+        noDataAvailablePlaceholderText:'sin datos',
+        closeDropDownOnSelection:true
+      }
+    }
   }
+
+
 
 }

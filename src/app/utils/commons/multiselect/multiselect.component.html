@@ -1,0 +1,19 @@
+
+<!-- Inicio Segundo ejemplo -->
+<div class="container">   
+    <div class="container text-center" >
+    <ng-multiselect-dropdown
+      [placeholder]="'Mi valor por defecto'"
+      [settings]="dropseting"
+      [data]="valordata"
+      [(ngModel)] ="valorretorno"      
+      (onSelect)="onItemSelect($event)"
+      [disabled]="false">      
+    </ng-multiselect-dropdown>        
+   
+    </div>
+</div>
+<!--Fin Segundo ejemplo -->
+
+
+

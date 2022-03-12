@@ -1,1 +1,454 @@
-<p>personas works!</p>
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <!-- titulo de la pagina -->
+          <h4 class="card-title">Administracion de Personas</h4>
+  <!-- Inicio de Buscar  Persona-->
+          <!-- Primera Busqueda -->
+          <div class="row">
+            <div class="col-8">
+              <div class="card">
+                <div class="card-body">
+                  <form>
+                    <div class="input-group mt-9 mb-9 input-group m-l-10">
+                      <div class="input-group-prepend">
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary dropdown-toggle"
+                          data-toggle="dropdown"
+                        >
+                          Tipo de Busqueda
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" routerLink="/faenas">Rut</a>
+                          <a class="dropdown-item" routerLink="/faenas">Nombre</a>                        
+                        </div>
+                      </div>
+                      <div class="input-group input-group m-l-10">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ingrese valor a buscar"
+                        />
+                      </div>
+                      <div class="input-group">
+                        <button
+                          type="button"
+                          class="btn btn-outline-success m-l-10"
+                        >
+                          Buscar
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-success m-l-10"
+                        >
+                          Crear
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Primera Busqueda -->
+  
+      <!-- Agrego tablas  -->
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  
+                  <div class="container">                                    
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Rut</th>
+                          <th>Nombre</th>
+                          <th>Razon Social</th>
+                          <th>Sigla</th>
+                          <th>Accion</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>77.123.456-7</td>
+                          <td>DAMY COMPANY</td>
+                          <td>DAMY S.A.</td>
+                          <td>DMC</td>
+                          <td><link rel="stylesheet" href="">Edit </td>
+                        </tr>
+                        <tr>
+                          <td>77.123.456-7</td>
+                          <td>DAMY COMPANY 2</td>
+                          <td>DAMY S.A.</td>
+                          <td>DMC</td>
+                          <td><link rel="stylesheet" href="">Edit </td>
+                        </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!--final de tablas -->   
+<!-- Fin de Buscar Persona -->
+      
+      
+  <!-- Crear Persona -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">    
+                <h4 class="card-title">Crear</h4>    
+                
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                          <!-- titulo de la pagina -->
+                        <h4 class="card-title">Persona</h4>
+                           
+                          <form class="form-horizontal p-t-20">
+
+                            <!-- rut  -->
+                              <div class="form-group row">
+                                  <label for="exampleInputuname3" class="col-sm-3 control-label">Rut</label>                                
+                                  <div class="col-sm-9">
+                                    <div class="input-group">
+                                      <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                                        Tipo de Documento
+                                      </button>
+                                      <div class="dropdown-menu">
+                                        <a class="dropdown-item" routerLink="/faenas">Rut</a>
+                                        <a class="dropdown-item" routerLink="/faenas">Dni</a>
+                                        <a class="dropdown-item" routerLink="/faenas">Pasaporte</a>                                       
+                                      </div> 
+                                      <div class="input-group">                                        
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="text" class="form-control" id="exampleInputuname3" placeholder="11.111.111-1">
+                                    </div> 
+                                    </div>                                                                                                                                            
+                                  </div>
+                              </div>
+
+                            <!-- Nombre -->
+                              <div class="form-group row">
+                                  <label for="exampleInputEmail3" class="col-sm-3 control-label">Nombre</label>
+                                  <div class="col-sm-9">
+                                      <div class="input-group">
+                                          <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                          <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Nombre">
+                                      </div>
+                                  </div>
+                              </div>
+                            
+                              <!-- Apellido Paterno -->
+                              <div class="form-group row">
+                                  <label for="web" class="col-sm-3 control-label">Apellido Paterno</label>
+                                  <div class="col-sm-9">
+                                      <div class="input-group">
+                                          <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                          <input type="text" class="form-control" id="web" placeholder="Apellido Paterno ">
+                                      </div>
+                                  </div>
+                              </div>
+                             
+                              <!-- Apellido Materno -->
+                              <div class="form-group row">
+                                  <label for="inputPassword4" class="col-sm-3 control-label">Apellido Materno</label>
+                                  <div class="col-sm-9">
+                                      <div class="input-group">
+                                          <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                          <input type="password" class="form-control" id="exampleInputpwd4" placeholder="Apellido Materno">
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <!-- Fecha Nacimiento -->
+                              <div class="form-group row">
+                                <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Naciemiento</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy">                                    
+                                    </div>
+                                </div>
+                              </div>
+
+                              <!-- Nacionalidad -->
+                              <div class="form-group row">
+                                <label for="inputPassword4" class="col-sm-3 control-label">Nacionalidad</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                        <input type="password" class="form-control" id="exampleInputpwd4" placeholder="Nacionalidad">
+                                    </div>
+                                </div>
+                              </div>
+
+                              <!-- Celular -->
+                              <div class="form-group row">
+                                <label for="inputPassword4" class="col-sm-3 control-label">Celular</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                        <input type="password" class="form-control" id="exampleInputpwd4" placeholder="Celular">
+                                    </div>
+                                </div>
+                              </div>
+                            
+                              <!-- Correo Electronico -->
+                              <div class="form-group row">
+                                <label for="inputPassword4" class="col-sm-3 control-label">Correo Electronico</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                        <input type="password" class="form-control" id="exampleInputpwd4" placeholder="Correo Electronico">
+                                    </div>
+                                </div>
+                              </div>
+
+                              <!-- Sexo -->
+                              <div class="form-group row">
+                                <label for="inputPassword4" class="col-sm-3 control-label">Sexo</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                      <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                      <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                        <option>Seleccionar Sexo</option>                                                                                                                                                                                                            
+                                            <option value="VA">Masculino</option>
+                                            <option value="WV">Femenino</option>
+                                            <option value="WV">No Binario</option>
+                                    </select>             
+                                    </div>
+                                </div>
+                              </div>
+
+                              <!-- Comuna -->
+                              <div class="form-group row">
+                                <label for="inputPassword4" class="col-sm-3 control-label">Comunas</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                      <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                      <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                        <option>Seleccionar Comuna</option>                                                                                                                                                                                                            
+                                            <option value="VA">Santiago</option>
+                                            <option value="WV">Buin</option>
+                                            <option value="WV">Pirque</option>
+                                    </select>             
+                                    </div>
+                                </div>
+                              </div>
+                          
+                             <!-- termina -->
+                              <div class="form-group">
+                                  <div class="offset-sm-12 col-sm-12">
+                                      <button type="submit" class="btn btn-outline-danger m-l-10 waves-effect waves-light">Cancelar</button>
+                                      <button type="submit" class="btn btn-outline-success m-l-10 waves-effect waves-light">Guardar</button>
+                                  </div>
+                              </div>                                                         
+                          </form>
+                          <!-- fin del form -->
+                      </div>                                                      
+                    </div>
+                  </div>
+                </div>                
+            </div>            
+          </div>            
+        </div>            
+      </div>
+  <!-- Crear Persona -->
+
+
+  <!-- Editar Persona -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">    
+            <h4 class="card-title">Editar</h4>    
+            
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                      <!-- titulo de la pagina -->
+                    <h4 class="card-title">Persona</h4>
+                       
+                      <form class="form-horizontal p-t-20">
+
+                        <!-- rut  -->
+                          <div class="form-group row">
+                              <label for="exampleInputuname3" class="col-sm-3 control-label">Rut</label>                                
+                              <div class="col-sm-9">
+                                <div class="input-group">
+                                  <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                                    Tipo de Documento
+                                  </button>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" routerLink="/faenas">Rut</a>
+                                    <a class="dropdown-item" routerLink="/faenas">Dni</a>
+                                    <a class="dropdown-item" routerLink="/faenas">Pasaporte</a>                                       
+                                  </div> 
+                                  <div class="input-group">                                        
+                                    <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                    <input type="text" class="form-control" id="exampleInputuname3" placeholder="11.111.111-1">
+                                </div> 
+                                </div>                                                                                                                                            
+                              </div>
+                          </div>
+
+                        <!-- Nombre -->
+                          <div class="form-group row">
+                              <label for="exampleInputEmail3" class="col-sm-3 control-label">Nombre</label>
+                              <div class="col-sm-9">
+                                  <div class="input-group">
+                                      <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                      <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Nombre">
+                                  </div>
+                              </div>
+                          </div>
+                        
+                          <!-- Apellido Paterno -->
+                          <div class="form-group row">
+                              <label for="web" class="col-sm-3 control-label">Apellido Paterno</label>
+                              <div class="col-sm-9">
+                                  <div class="input-group">
+                                      <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                      <input type="text" class="form-control" id="web" placeholder="Apellido Paterno ">
+                                  </div>
+                              </div>
+                          </div>
+                         
+                          <!-- Apellido Materno -->
+                          <div class="form-group row">
+                              <label for="inputPassword4" class="col-sm-3 control-label">Apellido Materno</label>
+                              <div class="col-sm-9">
+                                  <div class="input-group">
+                                      <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                      <input type="password" class="form-control" id="exampleInputpwd4" placeholder="Apellido Materno">
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <!-- Fecha Nacimiento -->
+                          <div class="form-group row">
+                            <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Naciemiento</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                    <input type="date" class="form-control" placeholder="dd/mm/yyyy">                                    
+                                </div>
+                            </div>
+                          </div>
+
+                          <!-- Nacionalidad -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Nacionalidad</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                    <input type="password" class="form-control" id="exampleInputpwd4" placeholder="Nacionalidad">
+                                </div>
+                            </div>
+                          </div>
+
+                          <!-- Celular -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Celular</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                    <input type="password" class="form-control" id="exampleInputpwd4" placeholder="Celular">
+                                </div>
+                            </div>
+                          </div>
+                        
+                          <!-- Correo Electronico -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Correo Electronico</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                    <input type="password" class="form-control" id="exampleInputpwd4" placeholder="Correo Electronico">
+                                </div>
+                            </div>
+                          </div>
+
+                          <!-- Sexo -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Sexo</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                  <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                    <option>Seleccionar Sexo</option>                                                                                                                                                                                                            
+                                        <option value="VA">Masculino</option>
+                                        <option value="WV">Femenino</option>
+                                        <option value="WV">No Binario</option>
+                                </select>             
+                                </div>
+                            </div>
+                          </div>
+
+                          <!-- Comuna -->
+                          <div class="form-group row">
+                            <label for="inputPassword4" class="col-sm-3 control-label">Comunas</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                  <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                    <option>Seleccionar Comuna</option>                                                                                                                                                                                                            
+                                        <option value="VA">Santiago</option>
+                                        <option value="WV">Buin</option>
+                                        <option value="WV">Pirque</option>
+                                </select>             
+                                </div>
+                            </div>
+                          </div>
+
+                            <!-- Estado -->
+                            <div class="form-group row">
+                              <label for="inputPassword4" class="col-sm-3 control-label">Estado</label>
+                              <div class="col-sm-9">
+                                  <div class="input-group">
+                                    <div class="input-group-addon"><i class="ti-marker"></i></div>
+                                    <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                                      <option>Seleccionar Estado</option>                                                                                                                                                                                                            
+                                          <option value="VA">Activo</option>
+                                          <option value="WV">Inactivo</option>                                          
+                                  </select>             
+                                  </div>
+                              </div>
+                            </div>
+                      
+                         <!-- termina -->
+                          <div class="form-group">
+                              <div class="offset-sm-12 col-sm-12">
+                                  <button type="submit" class="btn btn-outline-danger m-l-10 waves-effect waves-light">Cancelar</button>
+                                  <button type="submit" class="btn btn-outline-success m-l-10 waves-effect waves-light">Guardar</button>
+                              </div>
+                          </div>                                                         
+                      </form>
+                      <!-- fin del form -->
+                  </div>                                                      
+                </div>
+              </div>
+            </div>                
+        </div>            
+      </div>            
+    </div>            
+  </div>
+<!-- Crear Persona -->
+  
+  
+  
+          <!-- finalizan la card central-->
+        </div>
+      </div>
+    </div>
+  
+   

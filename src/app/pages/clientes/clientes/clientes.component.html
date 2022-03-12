@@ -12,25 +12,19 @@
               <div class="card-body">
                 <form>
                   <div class="input-group mt-9 mb-9 input-group m-l-10">
+                    
                     <div class="input-group-prepend">
-                      <button
-                        type="button"
-                        class="btn btn-outline-secondary dropdown-toggle"
-                        data-toggle="dropdown"
-                      >
+                      <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
                         Tipo de Busqueda
                       </button>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" routerLink="/faenas">Rut</a>
                         <a class="dropdown-item" routerLink="/faenas">Nombre</a>
-                        <a class="dropdown-item" routerLink="/faenas"
-                          >Cliente</a
-                        >
-                        <a class="dropdown-item" routerLink="/faenas"
-                          >Razon Social</a
-                        >
+                        <a class="dropdown-item" routerLink="/faenas">Cliente</a>
+                        <a class="dropdown-item" routerLink="/faenas">Razon Social</a>
                       </div>
                     </div>
+                    
                     <div class="input-group input-group m-l-10">
                       <input
                         type="text"
@@ -272,6 +266,11 @@
     </div>
 <!--fin editar cliente -->
 
+<div class="form-group row m-b-0">
+  <div class="offset-sm-3 col-sm-9">
+      <app-multiselect></app-multiselect>
+  </div>
+</div>
 
         <!-- finalizan la card central-->
       </div>

@@ -15,6 +15,7 @@ import { TablaComponent } from './utils/commons/tabla/tabla.component';
 import { PersonasComponent } from './pages/personal/personas/personas.component';
 import { OperadoresComponent } from './pages/personal/operadores/operadores.component';
 import { AusentismosComponent } from './pages/personal/ausentismos/ausentismos.component';
+// import { MultiselectComponent } from './utils/commons/multiselect/multiselect.component';
 
 
 const routes: Routes = [
@@ -23,19 +24,23 @@ const routes: Routes = [
     component: PagesComponent,
     children: [
       { path: 'dashboard', component: DashboardComponent },
+      { path: 'grafica', component: GraficaComponent },
+      
+      // Clientes: dejar en rutas de clientes
+      {path: 'contratos', component: ContratoComponent},    
       {path: 'clientes', component: ClientesComponent},
       {path: 'faenas', component: FaenaComponent},
-      {path: 'contratos', component: ContratoComponent},    
-      { path: 'grafica', component: GraficaComponent },
-      { path: 'tabla', component: TablaComponent },
       
-      
+      // Personas: dejar en rutas de personas
       { path: 'personas', component: PersonasComponent },
       { path: 'operadores', component: OperadoresComponent },
-      { path: 'tabla', component: AusentismosComponent },
-    
-
-
+      { path: 'ausentismo', component: AusentismosComponent },
+      
+      // borrar, solo lo uso para mirar los estilos y trabajar con el componente
+      { path: 'tabla', component: TablaComponent },
+      // { path: 'multiselect', component: MultiselectComponent },
+      
+      // modificar El login debe tener sus propias rutas
       { path: '', redirectTo: '/login', pathMatch: 'full' },
     ]
   },
