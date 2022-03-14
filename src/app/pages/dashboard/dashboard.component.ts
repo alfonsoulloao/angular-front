@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalService } from 'src/app/services/localService';
 import { ItemsDesplegable, SelectBuscador, ValoresConfg } from 'src/app/utils/models/multiselect';
 
 @Component({
@@ -12,10 +13,11 @@ export class DashboardComponent implements OnInit {
   itemsDesp:ItemsDesplegable[]=[];
   valoreson:ValoresConfg;
 
-  constructor() { 
-    
-  }
+  constructor(private readonly _localStorageService:LocalService) {}
 
+
+
+  
   ngOnInit(): void {
     this.valor={
       items :[
@@ -35,6 +37,10 @@ export class DashboardComponent implements OnInit {
         closeDropDownOnSelection:true
       }
     }
+    this._localStorageService.setJsonValue('alfonso',{nombre:'alfonso'});
+    let valor = this._localStorageService.getJsonValue('alfonso')
+    console.log(valor);
+    
   }
 
 
