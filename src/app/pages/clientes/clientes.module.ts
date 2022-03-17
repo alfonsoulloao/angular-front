@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // mis modulos
 import { SharedModule } from 'src/app/shared/shared.module';
@@ -17,10 +18,12 @@ import { UtilsModule } from 'src/app/utils/utils.module';
     FaenaComponent,
     ContratoComponent],
   imports: [
-    CommonModule,    
+    CommonModule,
+    BrowserAnimationsModule,      
     AppRoutingModule,
     UtilsModule,
     SharedModule,
+    
   ]
 })
 export class ClientesModule { }

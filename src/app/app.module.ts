@@ -5,6 +5,8 @@ import { HttpClientModule} from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+// lo traje manualmente
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // mis componentes
 import { PagesModule } from './pages/pages.module';
@@ -24,7 +26,8 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgMultiSelectDropDownModule.forRoot(),    
+    NgMultiSelectDropDownModule.forRoot(),  
+    BrowserAnimationsModule,  
     // mis modulos
     AuthModule,
     PagesModule,

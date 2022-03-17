@@ -1,0 +1,25 @@
+<!-- table-xs-responsive = cambia la forma de ser responsivo -->
+<table class="table table-responsive table-hover"  summary="An example of a responsive table using Bootstrap breakpoints."
+  aria-role="table">
+  <thead>
+      <th *ngFor="let titulo of titulos" scope="col"> 
+          {{titulo}}
+      </th>          
+  </thead>
+  <tbody>
+    <!-- for para las cabeceras -->
+    <tr *ngFor="let fila of filas">      
+      <td *ngFor="let key of objectKeys(fila)" [ngSwitch]="key">
+        <!-- carga icono -->
+        <a *ngSwitchCase="iconoKey" href="" ><span [ngClass]="icono"></span></a>
+        <!-- carga los enlaces -->
+        <button *ngSwitchCase="enlaceKey" class="btn btn-link" (click)="detalle(fila[key])" >{{enlace}}</button>
+        <a *ngSwitchDefault >{{fila[key]}}</a>
+      </td>
+    </tr>    
+          
+  </tbody>
+</table>
+
+
+<!-- <a><span [ngClass]="icono"></span></a>{{fila.nombre}}</td>            -->

@@ -10,6 +10,7 @@ import { SelectBuscador } from '../../models/multiselect';
 export class MultiselectComponent {
   // valor de entrada desde el componente a usar
   @Input('valores')valorretorno:SelectBuscador;  
+  @Input('listaDatos')listaDatos:any[];  
   
   // Variables de creacion
   listaDesplegable:any[];
@@ -17,13 +18,27 @@ export class MultiselectComponent {
 
   // get con data a mostrar
   get valordata(){      
-      this.listaDesplegable = this.valorretorno.items    
+      // this.listaDesplegable = this.valorretorno.items
+      this.listaDesplegable = this.listaDatos
      return  this.listaDesplegable;
    }
   
   // get para crear las condiciones a mostarar 
-  get dropseting(){        
-    this.dropdownSettings = this.valorretorno.valoresConfg;
+  get dropseting(){
+    if(this.valorretorno.valoresConfg!=null){      
+      this.dropdownSettings = this.valorretorno.valoresConfg;
+    } else{
+
+      this.dropdownSettings = {
+        enableCheckAll:false,
+        idField: 'valor',
+        textField: 'texto',
+        allowSearchFilter: true,
+        clearSearchFilter:true,
+        noDataAvailablePlaceholderText:"sin valores",
+        closeDropDownOnSelection:true
+      }
+    }
    return this.dropdownSettings;
   }  
 

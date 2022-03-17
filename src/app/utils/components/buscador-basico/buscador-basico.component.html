@@ -1,0 +1,56 @@
+ <!-- Primera Busqueda -->
+        <div class="row">
+          <div class="col-8">
+            <div class="card">
+              <div class="card-body">
+                <form id="buscadorBasicoform" #buscadorBasicoform="ngForm" >                   
+                  <div class="input-group mt-9 mb-9 input-group m-l-10">
+                    
+                    <!-- valores a desplegar en selectbox -->
+                    <div class="input-group">                                                                                                                             
+                      <select class="form-control" ngModel id="buscadorlista" name="buscadorlista" required>
+                          <option>{{tituloSelect}}</option>
+                          <option *ngFor="let items of lista" id="valorLista">{{items.valor}}</option>                          
+                        </select>
+                       <br>                          
+                    </div>                     
+
+                    <!-- cuadro de texto -->
+                    <div class="input-group input-group m-l-10">
+                      <input
+                        type="text"
+                        ngModel
+                        class="form-control"                      
+                        id="valoringresado" 
+                        name="valoringresado"
+                        placeholder="Ingrese valor a buscar"/>
+                    </div>
+
+                    <!-- botones de busqueda -->
+                    <div class="input-group">
+                      
+                    <!-- Boton Buscar -->
+                      <button
+                        type="submit"
+                        class="btn btn-outline-success m-l-10"
+                        (click)="clickBuscadorBasicoBuscar(buscadorBasicoform)">
+                        Buscar
+                      </button>
+                      <!-- fin Boton Buscar -->
+                      
+                      <!--Boton Crear  -->
+                      <button
+                        type="submit"
+                        class="btn btn-outline-success m-l-10"                       
+                        (click)="clickBuscadorBasicoCrear(buscadorBasicoform)">
+                        Crear
+                      </button>
+                      <!-- fin boton crear -->
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Primera Busqueda -->

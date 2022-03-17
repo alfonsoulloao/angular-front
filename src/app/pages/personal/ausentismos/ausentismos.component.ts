@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {MultiselectComponent} from '../../../utils/commons/multiselect/multiselect.component'
 
 @Component({
   selector: 'app-ausentismos',

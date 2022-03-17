@@ -14,6 +14,6 @@ export interface ItemsDesplegable{
 }
 
 export interface SelectBuscador{
-    valoresConfg: ValoresConfg;
+    valoresConfg?:ValoresConfg;
     items:ItemsDesplegable[];
 }

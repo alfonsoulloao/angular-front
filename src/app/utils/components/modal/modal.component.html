@@ -1,0 +1,31 @@
+<!-- <div class="card-body"> -->
+    <!-- <h4 class="card-title">Responsive model</h4> -->
+    <!-- sample modal content -->
+    <div id="responsive-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal-header contiene el titulo e icono del modal  -->
+                <div class="modal-header">
+                   <!-- titulo del modal -->
+                    <h4 class="modal-title">
+                        {{tituloModal}}
+                    </h4>
+                    <!-- boton para cerrar el modal -->
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-container">
+                    <ng-content></ng-content>
+                </div>                                
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
+    <p data-toggle="modal" data-target="#responsive-modal" class="model_img img-responsive">Nuevo Modal</p>    
+    <!-- </div> -->
+
+
+    
+                
+               
+
+

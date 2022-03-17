@@ -11,10 +11,12 @@ import { RecoverPassComponent } from './auth/recoverpass/recoverpass.component';
 import { ClientesComponent } from './pages/clientes/clientes/clientes.component';
 import { FaenaComponent } from './pages/clientes/faena/faena.component';
 import { ContratoComponent } from './pages/clientes/contrato/contrato.component';
-import { TablaComponent } from './utils/commons/tabla/tabla.component';
 import { PersonasComponent } from './pages/personal/personas/personas.component';
 import { OperadoresComponent } from './pages/personal/operadores/operadores.component';
 import { AusentismosComponent } from './pages/personal/ausentismos/ausentismos.component';
+import { TablaComponent } from './utils/components/tabla/tabla.component';
+import { ModalComponent } from './utils/components/modal/modal.component';
+import { BuscadorBasicoComponent } from './utils/components/buscador-basico/buscador-basico.component';
 // import { MultiselectComponent } from './utils/commons/multiselect/multiselect.component';
 
 
@@ -38,6 +40,10 @@ const routes: Routes = [
       
       // borrar, solo lo uso para mirar los estilos y trabajar con el componente
       { path: 'tabla', component: TablaComponent },
+      { path: 'modal', component: ModalComponent },
+      { path: 'buscador', component: BuscadorBasicoComponent },
+      
+      
       // { path: 'multiselect', component: MultiselectComponent },
       
       // modificar El login debe tener sus propias rutas

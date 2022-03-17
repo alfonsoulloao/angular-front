@@ -1,0 +1,73 @@
+body {  
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);  
+}  
+h1 {  
+  position: relative;  
+  padding: 10;  
+  margin: 10;  
+  font-family: "Raleway", sans-serif;  
+  font-weight: 300;  
+  font-size: 40px;  
+  color: red;  
+  -webkit-transition: all 0.4s ease 0s;  
+  -o-transition: all 0.4s ease 0s;  
+  transition: all 0.4s ease 0s;  
+}  
+  
+@media screen and (max-width: 575px) {  
+.table-xs-responsive th {  
+    width: 100% !important;  
+    display: block !important;  
+    box-sizing: border-box;  
+}  
+.table-xs-responsive td {  
+    width: 100% !important;  
+    display: block !important;  
+    box-sizing: border-box;  
+}  
+}  
+@media screen and (max-width: 767px) {  
+.table.table-sm-responsive th {  
+    width: 100% !important;  
+    display: block !important;  
+    box-sizing: border-box;  
+}  
+.table.table-sm-responsive td {  
+    width: 100% !important;  
+    display: block !important;  
+    box-sizing: border-box;  
+}  
+}  
+@media screen and (max-width: 992px) {  
+.table.table-sm-responsive th {  
+    width: 100% !important;  
+    display: block !important;  
+    box-sizing: border-box;  
+}  
+.table.table-sm-responsive td {  
+    width: 100% !important;  
+    display: block !important;  
+    box-sizing: border-box;  
+}  
+}  
+@media screen and (max-width: 1200px) {  
+.table.table-sm-responsive th {  
+    width: 100% !important;  
+    display: block !important;  
+    box-sizing: border-box;  
+}  
+.table.table-sm-responsive td {  
+    width: 100% !important;  
+    display: block !important;  
+    box-sizing: border-box;  
+}  
+}  
+.info {  
+color: yellow;  
+}  
+.success {  
+    color: #00C851;   
+}  
+.warning {  
+color: red;  
+}  
