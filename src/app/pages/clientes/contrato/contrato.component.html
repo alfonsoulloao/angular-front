@@ -6,385 +6,139 @@
         <h4 class="card-title">Contratos</h4>
 
         <!-- Primera Busqueda -->
-        <div class="row">
-          <div class="col-8">
-            <div class="card">
-              <div class="card-body">
-                <form>
-                  <div class="input-group mt-9 mb-9 input-group m-l-10">
-                    <!-- primer combo Nombre Cloentes -->
-                    <div class="input-group-prepend">
-                      <button
-                        type="button"
-                        class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
-                        Nombre Clientes
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" routerLink="/faenas">Cliente 1</a>
-                        <a class="dropdown-item" routerLink="/faenas">Cliente 2</a>
-                        <a class="dropdown-item" routerLink="/faenas">Cliente 3</a>
-                      </div>
-                    </div>
-
-                     <!-- Segundo combo Nombre Faena -->
-                     <div class="input-group m-l-10">
-                      <button
-                        type="button"
-                        class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
-                        Nombre Faena
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" routerLink="/faenas">Faena 1</a>
-                        <a class="dropdown-item" routerLink="/faenas">Faena 2</a>
-                        <a class="dropdown-item" routerLink="/faenas">Faena 3</a>
-                      </div>
-                    </div>
-                    <!-- texbox nombre faena  -->
-                    <div class="input-group input-group m-l-10">
-                      <input type="text" class="form-control" placeholder="Nombre Contrato" />
-                    </div>
-                    <!-- Botones -->
-                    <div class="input-group"> 
-                      <button type="button" class="btn btn-outline-success m-l-10"> Buscar </button>
-                      <button type="button" class="btn btn-outline-success m-l-10"> Crear </button>
-                    </div>
-
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+        <app-buscador-basico 
+        (buscadorOut)="mesajeBuscadorBasico($event)" 
+        [listaBuscador]="lista">
+      </app-buscador-basico>
         <!-- Primera Busqueda -->
 
-    <!-- Agrego tablas -->
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-body">  
-              
-              <!-- Flechas Tablas -->
-              <div class="tablesaw-bar mode-swipe">
-                  <div class="tablesaw-advance">
-                    <a  class="tablesaw-nav-btn btn btn-micro left " title="Previous Column"></a>
-                    <a  class="tablesaw-nav-btn btn btn-micro right" title="Next Column"></a>
+             <!-- Agrego tablas -->
+             <div class="row" *ngIf="visibleTable == true">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">      
+                      <app-tabla ></app-tabla>
                   </div>
-                  <div class="tablesaw-advance minimap">
-                    <ul class="tablesaw-advance-dots">                                
-                      <li class="tablesaw-advance-dots-hide"><i></i></li>
-                      <li class="tablesaw-advance-dots-hide"><i></i></li>
-                    </ul>
-                </div>
-              </div>                                                                
-                  
-              <table class="tablesaw table-bordered table-hover table tablesaw-swipe tablesaw-sortable" data-tablesaw-mode="swipe" data-tablesaw-sortable="" data-tablesaw-sortable-switch="" data-tablesaw-minimap="" data-tablesaw-mode-switch="" id="table-3397" style="">
-                <!-- titulos -->
-                    <thead>                       
-                        <tr>
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="" class="tablesaw-cell-persist tablesaw-sortable-head" data-sortable-numeric="false">
-                              <button class="tablesaw-sortable-btn">Nombre Cliente</button>
-                            </th>                          
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="" class="tablesaw-cell-persist tablesaw-sortable-head" data-sortable-numeric="false">
-                              <button class="tablesaw-sortable-btn">Nombre Faena</button>
-                            </th>
-                        
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="" class="tablesaw-cell-persist tablesaw-sortable-head" data-sortable-numeric="false">
-                              <button class="tablesaw-sortable-btn">Nombre Contrato</button>
-                            </th>
-                        
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="" class="tablesaw-cell-persist tablesaw-sortable-head" data-sortable-numeric="false">
-                              <button class="tablesaw-sortable-btn">Id Contrato ERP</button>
-                            </th>
-
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="" class="tablesaw-cell-persist tablesaw-sortable-head" data-sortable-numeric="false">
-                              <button class="tablesaw-sortable-btn">Fecha Inicio</button>
-                            </th>
-
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="" class="tablesaw-cell-persist tablesaw-sortable-head" data-sortable-numeric="false">
-                              <button class="tablesaw-sortable-btn">Fecha Termino</button>
-                            </th>
-
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="" class="tablesaw-cell-persist tablesaw-sortable-head" data-sortable-numeric="false">
-                              <button class="tablesaw-sortable-btn">Administrador</button>
-                            </th>
-
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="" class="tablesaw-cell-persist tablesaw-sortable-head" data-sortable-numeric="false">
-                              <button class="tablesaw-sortable-btn">Gerente</button>
-                            </th>
-
-                            <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="" class="tablesaw-cell-persist tablesaw-sortable-head" data-sortable-numeric="false">
-                              <button class="tablesaw-sortable-btn">Descripción</button>
-                            </th>
-                                                        
-                        </tr>
-                    </thead>
-                   
-                    <tbody>
-                        <tr>                            
-                            <td class="">Dummy</td>
-                            <td class="">Dummy</td>
-                            <td class="">Dummy</td>
-                            <td class="">Dummy</td>
-                            <td class="">Dummy</td>
-                            <td class="">Dummy</td>
-                            <td class="">Dummy</td>
-                            <td class="">Dummy</td>
-                            <td class="">Dummy</td>                                         
-                        </tr>
-                        <tr>
-                          <td class="">Dummy</td>
-                          <td class="">Dummy</td>
-                          <td class="">Dummy</td>
-                          <td class="">Dummy</td>
-                          <td class="">Dummy</td>
-                          <td class="">Dummy</td>
-                          <td class="">Dummy</td>
-                          <td class="">Dummy</td>
-                          <td class="">Dummy</td>
-                        </tr>                                                                     
-                    </tbody>
-              </table>                             
-                </div>
-              </div>
-            </div>          
-        </div>
-    <!--final de tablas -->   
+                  </div>
+                  </div>
+            </div>
+            <!--final de tablas -->   
     
-    
-    <!-- Crear Contrato -->
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-body">    
-                  <h4 class="card-title">Crear</h4>    
-                  
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="card">
-                        <div class="card-body">
-                            <!-- titulo de la pagina -->
-                          <h4 class="card-title">Contratos</h4>
+  
+
+    <!--Crear y Editar Contrato -->
+             <div class="row" *ngIf="visibleClient == true">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                        <!-- titulo de la pagina -->
+                      <h4 class="card-title">Contratos</h4>
+                        
+                        <form class="form-horizontal p-t-20">
                             
-                            <form class="form-horizontal p-t-20">
-                                
-                              <!-- Id Contrato ERP: -->
-                              <div class="form-group row">
-                                    <label for="exampleInputuname3" class="col-sm-3 control-label">Id Contrato ERP:</label>
-                                    <div class="col-sm-9">
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                            <input type="text" class="form-control" id="exampleInputuname3" placeholder="Id de COntrato">
-                                        </div>
-                                    </div>
-                              </div>
-                              
-                              <!-- Nombre -->
-                              <div class="form-group row">
-                                  <label for="exampleInputuname3" class="col-sm-3 control-label">Nombre</label>
-                                  <div class="col-sm-9">
-                                      <div class="input-group">
-                                          <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                          <input type="text" class="form-control" id="exampleInputuname3" placeholder="Ingrese Nopmbre">
-                                      </div>
-                                  </div>
-                              </div>
-                            <!-- Fecha Inicio -->
-                              <div class="form-group row">
-                                <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Inicio</label>
+                          <!-- Id Contrato ERP: -->
+                          <div class="form-group row">
+                                <label for="exampleInputuname3" class="col-sm-3 control-label">Id Contrato ERP:</label>
                                 <div class="col-sm-9">
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy">                                    
+                                        <input type="text" class="form-control" id="exampleInputuname3" placeholder="Id de COntrato">
                                     </div>
                                 </div>
-                              </div>
+                          </div>
                           
-                            <!-- Fecha Termino -->
-                              <div class="form-group row">
-                              <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Termino</label>
+                          <!-- Nombre -->
+                          <div class="form-group row">
+                              <label for="exampleInputuname3" class="col-sm-3 control-label">Nombre</label>
                               <div class="col-sm-9">
                                   <div class="input-group">
                                       <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                      <input type="date" class="form-control" placeholder="dd/mm/yyyy">   
+                                      <input type="text" class="form-control" id="exampleInputuname3" placeholder="Ingrese Nopmbre">
                                   </div>
                               </div>
-                              </div>
-                        
-                          <!-- Administrador -->
-                            <div class="form-group row">
-                            <label for="exampleInputuname3" class="col-sm-3 control-label">Administrador</label>
-                            <div class="col-sm-9">
-                                <div class="input-group">
-                                    <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                    <input type="text" class="form-control" id="exampleInputuname3" placeholder="Administrador">
-                                </div>
-                            </div>
-                            </div>
-                          <!-- Gerente -->
+                          </div>
+                        <!-- Fecha Inicio -->
                           <div class="form-group row">
-                            <label for="exampleInputuname3" class="col-sm-3 control-label">Gerente</label>
+                            <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Inicio</label>
                             <div class="col-sm-9">
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                    <input type="text" class="form-control" id="exampleInputuname3" placeholder="Gerente">
+                                    <input type="date" class="form-control" placeholder="dd/mm/yyyy">                                    
                                 </div>
                             </div>
                           </div>
-                          <!-- Descripcion -->
+                      
+                        <!-- Fecha Termino -->
                           <div class="form-group row">
-                            <label for="exampleInputEmail3" class="col-sm-3 control-label">Descripcion</label>
-                            <div class="col-sm-9">
-                                <div class="input-group">
-                                    <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Descripcion">
-                                </div>
+                          <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Termino</label>
+                          <div class="col-sm-9">
+                              <div class="input-group">
+                                  <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                  <input type="date" class="form-control" placeholder="dd/mm/yyyy">   
+                              </div>
+                          </div>
+                          </div>
+                    
+                      <!-- Administrador -->
+                        <div class="form-group row">
+                        <label for="exampleInputuname3" class="col-sm-3 control-label">Administrador</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                <input type="text" class="form-control" id="exampleInputuname3" placeholder="Administrador">
                             </div>
                         </div>
-                        
-                        <div class="form-group ">
+                        </div>
+                      <!-- Gerente -->
+                      <div class="form-group row">
+                        <label for="exampleInputuname3" class="col-sm-3 control-label">Gerente</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                <input type="text" class="form-control" id="exampleInputuname3" placeholder="Gerente">
+                            </div>
+                        </div>
+                      </div>
+                      <!-- Descripcion -->
+                      <div class="form-group row">
+                        <label for="exampleInputEmail3" class="col-sm-3 control-label">Descripcion</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
+                                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Descripcion">
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <!-- Estado -->
+              <div class="form-group row" *ngIf="visibleStatusClient == true">
+                <label for="inputPassword4" class="col-sm-3 control-label">Estado</label>
+                <div class="col-sm-9">                                
+                  <div class="input-group">
+                    <div class="input-group-addon"><i class="ti-marker"></i></div>
+                    <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
+                        <option>Seleccionar Area de Negocio</option>                                                                                                                                                                                                            
+                            <option value="VA">Activo</option>
+                            <option value="WV">Inactivo</option>                                            
+                    </select> 
+                  </div>
+                </div>
+              </div>
+               <!-- Estado -->
+            
+                  <!-- Botones -->
+                      <div class="form-group ">
                           <div class="offset-sm-12 col-sm-12">
                               <button type="submit" class="btn btn-outline-danger m-l-10 waves-effect waves-light">Cancelar</button>
                               <button type="submit" class="btn btn-outline-success m-l-10 waves-effect waves-light">Guardar</button>
                           </div>
-                        </div>    
-                                                      
-                      </form>
-                    </div>  
-                  </div>
-                </div>
+                      </div>
+                                                  
+                  </form>
+                </div>  
               </div>
-                  
-              </div>            
-          </div>            
-          </div>            
-        </div>
-    <!-- Crear cliente -->
-
-
-    <!-- Editar Contrato -->
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="card">
-                        <div class="card-body">    
-                            <h4 class="card-title">Crear</h4>    
-                            
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="card">
-                                  <div class="card-body">
-                                      <!-- titulo de la pagina -->
-                                    <h4 class="card-title">Contratos</h4>
-                                      
-                                      <form class="form-horizontal p-t-20">
-                                          
-                                        <!-- Id Contrato ERP: -->
-                                        <div class="form-group row">
-                                              <label for="exampleInputuname3" class="col-sm-3 control-label">Id Contrato ERP:</label>
-                                              <div class="col-sm-9">
-                                                  <div class="input-group">
-                                                      <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                                      <input type="text" class="form-control" id="exampleInputuname3" placeholder="Id de COntrato">
-                                                  </div>
-                                              </div>
-                                        </div>
-                                        
-                                        <!-- Nombre -->
-                                        <div class="form-group row">
-                                            <label for="exampleInputuname3" class="col-sm-3 control-label">Nombre</label>
-                                            <div class="col-sm-9">
-                                                <div class="input-group">
-                                                    <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                                    <input type="text" class="form-control" id="exampleInputuname3" placeholder="Ingrese Nopmbre">
-                                                </div>
-                                            </div>
-                                        </div>
-                                      <!-- Fecha Inicio -->
-                                        <div class="form-group row">
-                                          <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Inicio</label>
-                                          <div class="col-sm-9">
-                                              <div class="input-group">
-                                                  <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                                  <input type="date" class="form-control" placeholder="dd/mm/yyyy">                                    
-                                              </div>
-                                          </div>
-                                        </div>
-                                    
-                                      <!-- Fecha Termino -->
-                                        <div class="form-group row">
-                                        <label for="exampleInputuname3" class="col-sm-3 control-label">Fecha Termino</label>
-                                        <div class="col-sm-9">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                                <input type="date" class="form-control" placeholder="dd/mm/yyyy">   
-                                            </div>
-                                        </div>
-                                        </div>
-                                  
-                                    <!-- Administrador -->
-                                      <div class="form-group row">
-                                      <label for="exampleInputuname3" class="col-sm-3 control-label">Administrador</label>
-                                      <div class="col-sm-9">
-                                          <div class="input-group">
-                                              <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                              <input type="text" class="form-control" id="exampleInputuname3" placeholder="Administrador">
-                                          </div>
-                                      </div>
-                                      </div>
-                                    <!-- Gerente -->
-                                    <div class="form-group row">
-                                      <label for="exampleInputuname3" class="col-sm-3 control-label">Gerente</label>
-                                      <div class="col-sm-9">
-                                          <div class="input-group">
-                                              <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                              <input type="text" class="form-control" id="exampleInputuname3" placeholder="Gerente">
-                                          </div>
-                                      </div>
-                                    </div>
-                                    <!-- Descripcion -->
-                                    <div class="form-group row">
-                                      <label for="exampleInputEmail3" class="col-sm-3 control-label">Descripcion</label>
-                                      <div class="col-sm-9">
-                                          <div class="input-group">
-                                              <div class="input-group-addon"><i class="ti-arrow-right"></i></div>
-                                              <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Descripcion">
-                                          </div>
-                                      </div>
-                                  </div>
-                                  
-                                   <!-- Estado -->
-                            <div class="form-group row">
-                              <label for="inputPassword4" class="col-sm-3 control-label">Estado</label>
-                              <div class="col-sm-9">                                
-                                <div class="input-group">
-                                  <div class="input-group-addon"><i class="ti-marker"></i></div>
-                                  <select class="select form-control custom-select" style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true">
-                                      <option>Seleccionar Area de Negocio</option>                                                                                                                                                                                                            
-                                          <option value="VA">Activo</option>
-                                          <option value="WV">Inactivo</option>                                            
-                                  </select> 
-                                </div>
-                              </div>
-                          </div>
-
-                          
-                                <!-- Botones -->
-                                    <div class="form-group ">
-                                        <div class="offset-sm-12 col-sm-12">
-                                            <button type="submit" class="btn btn-outline-danger m-l-10 waves-effect waves-light">Cancelar</button>
-                                            <button type="submit" class="btn btn-outline-success m-l-10 waves-effect waves-light">Guardar</button>
-                                        </div>
-                                    </div>
-                                                                
-                                </form>
-                              </div>  
-                            </div>
-                          </div>
-                        </div>
-                            
-                        </div>            
-                    </div>            
-                    </div>            
-                  </div>
+            </div>
+          </div>                           
     <!-- Editar COntrato  -->
    
         <!-- finalizan la card central-->

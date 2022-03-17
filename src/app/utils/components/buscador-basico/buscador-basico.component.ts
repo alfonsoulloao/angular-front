@@ -18,14 +18,14 @@ export class BuscadorBasicoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {    
-    this.lista = [
-      {id:"1",valor:"Rut"},
-      {id:"2",valor:"Nombre"},
-      {id:"3",valor:"Cliente"},
-      {id:"4",valor:"Razon Social"},
-      {id:"5",valor:"Sigla"},
-      {id:"6",valor:"Todos"}
-    ];     
+    // this.lista = [
+    //   {id:"1",valor:"Rut"},
+    //   {id:"2",valor:"Nombre"},
+    //   {id:"3",valor:"Cliente"},
+    //   {id:"4",valor:"Razon Social"},
+    //   {id:"5",valor:"Sigla"},
+    //   {id:"6",valor:"Todos"}
+    // ];     
   }
 
   

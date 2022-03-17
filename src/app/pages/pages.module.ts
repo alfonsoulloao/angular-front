@@ -17,6 +17,7 @@ import { UtilsModule } from '../utils/utils.module';
 //mis rutas
 import { AppRoutingModule } from '../app-routing.module';
 import { ClientesModule } from './clientes/clientes.module';
+import { PersonalModule } from './personal/personal.module';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { ClientesModule } from './clientes/clientes.module';
       SharedModule,
       UtilsModule,
       ClientesModule,
+      PersonalModule,
       
       // mis rutas
       AppRoutingModule,

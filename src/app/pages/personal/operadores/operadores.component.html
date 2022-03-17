@@ -5,95 +5,25 @@
           <!-- titulo de la pagina -->
           <h4 class="card-title">Administracion de Operadores</h4>
   <!-- Inicio de Buscar  Operadores-->
-          <!-- Primera Busqueda -->
-          <div class="row">
-            <div class="col-8">
-              <div class="card">
-                <div class="card-body">
-                  <form>
-                    <div class="input-group mt-9 mb-9 input-group m-l-10">
-                      <div class="input-group-prepend">
-                        <button
-                          type="button"
-                          class="btn btn-outline-secondary dropdown-toggle"
-                          data-toggle="dropdown">
-                          Tipo de Busqueda
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" routerLink="/faenas">Rut</a>
-                          <a class="dropdown-item" routerLink="/faenas">Nombre</a>                        
-                        </div>
-                      </div>
-                      <div class="input-group input-group m-l-10">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Ingrese valor a buscar"
-                        />
-                      </div>
-                      <div class="input-group">
-                        <button
-                          type="button"
-                          class="btn btn-outline-success m-l-10"
-                        >
-                          Buscar
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-outline-success m-l-10"
-                        >
-                          Crear
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Primera Busqueda -->
+         <!-- Primera Busqueda -->
+         <app-buscador-basico 
+         (buscadorOut)="mesajeBuscadorBasico($event)" 
+         [listaBuscador]="lista">
+       </app-buscador-basico>
+         <!-- Primera Busqueda -->
   
-      <!-- Agrego tablas  -->
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  
-                  <div class="container">                                    
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>Rut</th>
-                          <th>Nombre</th>
-                          <th>Razon Social</th>
-                          <th>Sigla</th>
-                          <th>Accion</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>77.123.456-7</td>
-                          <td>DAMY COMPANY</td>
-                          <td>DAMY S.A.</td>
-                          <td>DMC</td>
-                          <td><link rel="stylesheet" href="">Edit </td>
-                        </tr>
-                        <tr>
-                          <td>77.123.456-7</td>
-                          <td>DAMY COMPANY 2</td>
-                          <td>DAMY S.A.</td>
-                          <td>DMC</td>
-                          <td><link rel="stylesheet" href="">Edit </td>
-                        </tr>
-                      
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
+       <!-- Agrego tablas -->
+    <div class="row" *ngIf="visibleTable == true">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">      
+              <app-tabla ></app-tabla>
           </div>
-      <!--final de tablas -->   
+          </div>
+          </div>
+    </div>
+    <!--final de tablas -->  
+    
 <!-- Fin de Buscar Operadores -->
       
       

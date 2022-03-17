@@ -10,6 +10,7 @@ import { AusentismosComponent } from './ausentismos/ausentismos.component';
 
 //modulos personales
 import { UtilsModule } from 'src/app/utils/utils.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -22,6 +23,7 @@ import { UtilsModule } from 'src/app/utils/utils.module';
   imports: [
     CommonModule,
     FormsModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
     NgMultiSelectDropDownModule.forRoot(),
     UtilsModule
